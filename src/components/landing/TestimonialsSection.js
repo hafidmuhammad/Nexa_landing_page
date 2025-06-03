@@ -1,6 +1,7 @@
 import SectionTitle from "../common/SectionTitle";
 import ScrollReveal from "../common/ScrollReveal";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -48,7 +49,15 @@ export default function TestimonialsSection() {
               >
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-600 overflow-hidden mr-4">
-                    {t.avatar && <img src={t.avatar} alt={t.name} className="w-full h-full object-cover" />}
+                    {t.avatar && (
+                      <Image 
+                        src={t.avatar} 
+                        alt={t.name} 
+                        width={48} 
+                        height={48} 
+                        className="w-full h-full object-cover" 
+                      />
+                    )}
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">{t.name}</h4>

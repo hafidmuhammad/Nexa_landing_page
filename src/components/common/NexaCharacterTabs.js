@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import characterProfiles from "../../constants/characterProfiles";
 import colors from "../../constants/colors";
 
@@ -89,9 +90,11 @@ export default function NexaCharacterTabs() {
               className="text-5xl mb-3"
             >
               {typeof characterProfiles[active].icon === 'string' && characterProfiles[active].icon.startsWith('/') ? (
-                <img 
+                <Image 
                   src={characterProfiles[active].icon} 
                   alt={characterProfiles[active].name} 
+                  width={128}
+                  height={128}
                   className="w-32 h-32 mx-auto rounded-full object-cover"
                 />
               ) : (

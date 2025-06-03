@@ -216,7 +216,7 @@ export default function ChatWidget({ onClose }) {
             <Smile size={20} />
           </button>
           <button className="hover:bg-purple-100 p-2 rounded-full transition text-purple-500">
-            <Image size={20} />
+            <Image size={20} aria-label="Upload gambar" />
           </button>
           <button className="hover:bg-purple-100 p-2 rounded-full transition text-purple-500">
             <Sticker size={20} />

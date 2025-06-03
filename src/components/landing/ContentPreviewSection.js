@@ -1,4 +1,5 @@
 import { FaInstagram, FaTiktok } from "react-icons/fa";
+import Image from "next/image";
 
 const previews = [
   {
@@ -41,9 +42,11 @@ export default function ContentPreviewSection() {
             key={i}
             className="min-w-[220px] bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-200 flex-shrink-0"
           >
-            <img
+            <Image
               src={p.img}
               alt={p.type}
+              width={400}
+              height={160}
               className="rounded-t-2xl w-full h-40 object-cover"
             />
             <div className="p-4 flex flex-col gap-2">

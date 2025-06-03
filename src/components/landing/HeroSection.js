@@ -1,4 +1,5 @@
 import Button from "../common/Button";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -26,10 +27,12 @@ export default function HeroSection() {
         </div>
         <div className="flex-1 flex justify-center relative">
           <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-32 h-32 bg-white/40 rounded-full blur-2xl"></div>
-          <img
+          <Image
             src="/nexa_gemini.png"
             alt="Nexalant Hero"
-            className="w-80  relative z-10"
+            width={320}
+            height={320}
+            className="w-80 relative z-10"
           />
         </div>
       </div>
