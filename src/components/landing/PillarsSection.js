@@ -1,5 +1,7 @@
 import ContentCard from "./ContentCard";
 import { FaBrain, FaSeedling, FaUsers, FaLightbulb } from "react-icons/fa";
+import ScrollReveal from "../common/ScrollReveal";
+import { motion } from "framer-motion";
 
 const pillars = [
   {
@@ -25,20 +27,37 @@ const pillars = [
   },
   {
     icon: <FaLightbulb />,
-    title: "Nexa Think",
-    desc: "Belajar mikir kritis & problem solving lewat studi kasus seru. Siap jadi problem solver?",
-    color: "linear-gradient(135deg, #B9F6CA 0%, #00E676 100%)",
-    cta: { label: "Ikutan Think", href: "#" },
+    title: "Nexa Create",
+    desc: "Tempat buat kamu yang suka bikin konten, desain, atau apapun yang kreatif. Bisa kolaborasi juga!",
+    color: "linear-gradient(135deg, #B9F6CA 0%, #69F0AE 100%)",
+    cta: { label: "Mulai Create", href: "#" },
   },
 ];
 
 export default function PillarsSection() {
   return (
-    <section className="py-16 bg-white">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-[#0066B3]">4 Pilar Seru di Nexalant.id</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-4">
-        {pillars.map((p, i) => (
-          <ContentCard key={i} {...p} />
+    <section className="py-16 px-4">
+      <ScrollReveal>
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-[#0066B3]">
+          Pilar Komunitas Nexa
+        </h2>
+      </ScrollReveal>
+      
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {pillars.map((pillar, index) => (
+          <ScrollReveal 
+            key={pillar.title} 
+            delay={0.1 * index}
+            threshold={0.2}
+          >
+            <ContentCard
+              icon={pillar.icon}
+              title={pillar.title}
+              desc={pillar.desc}
+              color={pillar.color}
+              cta={pillar.cta}
+            />
+          </ScrollReveal>
         ))}
       </div>
     </section>

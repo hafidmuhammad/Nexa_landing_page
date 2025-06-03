@@ -9,12 +9,13 @@ import TestimonialsSection from "../components/landing/TestimonialsSection";
 import CTASection from "../components/landing/CTASection";
 import Footer from "../components/landing/Footer";
 import FloatingChatButton from "../components/common/FloatingChatButton";
+import Navbar from "../components/common/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#F3EFFF] dark:bg-[#2D1B4A]">
-      {/* ...header... */}
-      <main className="flex-1 flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#FAFAFA] dark:bg-[#1F1F33]">
+      <Navbar />
+      <main className="flex-1 flex flex-col pt-16">
         <HeroSection />
         <PillarsSection />
         <ChallengeBanner />

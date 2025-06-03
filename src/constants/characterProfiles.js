@@ -1,34 +1,33 @@
 import colors from "./colors";
-import images from "./images";
 
 const characterProfiles = [
   {
-    name: "Raka",
-    icon: images.raka,
+    name: "Apip",
+    image: "/character/Apip",
     color: colors.nexa.raka,
     desc: "Depresi & kreativitas, suka menggambar tengah malam, penyendiri tapi punya ide-ide gila.",
   },
   {
-    name: "Luna",
-    icon: images.luna,
+    name: "Dala",
+    image: "/character/Dala.png",
     color: colors.nexa.luna,
     desc: "Mood swing parah, suka dengerin musik galau, tapi selalu ada buat temen curhat.",
   },
   {
     name: "Kiko",
-    icon: images.kiko,
+    image: "/character/kiko.png",
     color: colors.nexa.kiko,
     desc: "Anak teknik yang suka ngoding, kadang random, kadang serius, selalu pengen belajar hal baru.",
   },
   {
     name: "Alya",
-    icon: images.alya,
+    image: "/character/alya.png",
     color: colors.nexa.alya,
     desc: "Extrovert, suka volunteer, gampang akrab sama siapa aja, selalu semangat ngajak kolaborasi.",
   },
   {
     name: "Fajar",
-    icon: images.fajar,
+    image: "/character/fajar.png",
     color: colors.nexa.fajar,
     desc: "Ambis, suka tantangan, jago public speaking, dan selalu punya solusi out of the box.",
   },

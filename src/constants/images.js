@@ -1,16 +1,4 @@
-const images = {
-  logo: "/logo-nexalant.svg",
-  hero: "/hero-illustration.svg",
-  about: "/about-illustration.svg",
-  // Character icons (placeholder emoji, can be replaced with SVG)
-  raka: "🧠",
-  luna: "🌙",
-  kiko: "🐧",
-  alya: "🦄",
-  fajar: "🔥",
-};
 
-export default images;
 
 
 export const content = {
