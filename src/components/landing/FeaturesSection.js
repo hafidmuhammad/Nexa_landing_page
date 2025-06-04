@@ -3,35 +3,16 @@ import { FaRocket, FaLock, FaPlug, FaHeadset, FaDesktop, FaLayerGroup } from "re
 
 const features = [
   {
-    icon: <FaRocket className="text-[#0066B3] text-3xl mb-2" />,
+    icon: <FaRocket className="text-[#0066B3] dark:text-[#B388FF] text-3xl mb-2" />,
     title: "Performa Tinggi",
     desc: "Akses cepat, stabil, dan siap untuk traffic besar.",
   },
   {
-    icon: <FaLock className="text-[#0066B3] text-3xl mb-2" />,
+    icon: <FaLock className="text-[#0066B3] dark:text-[#B388FF] text-3xl mb-2" />,
     title: "Keamanan Data",
     desc: "Proteksi data kelas enterprise dengan enkripsi modern.",
   },
-  {
-    icon: <FaPlug className="text-[#0066B3] text-3xl mb-2" />,
-    title: "Integrasi Mudah",
-    desc: "Integrasi API & tools bisnis tanpa ribet.",
-  },
-  {
-    icon: <FaHeadset className="text-[#0066B3] text-3xl mb-2" />,
-    title: "Dukungan 24/7",
-    desc: "Tim support siap membantu kapan saja.",
-  },
-  {
-    icon: <FaDesktop className="text-[#0066B3] text-3xl mb-2" />,
-    title: "UI/UX Modern",
-    desc: "Tampilan profesional, mudah digunakan di semua device.",
-  },
-  {
-    icon: <FaLayerGroup className="text-[#0066B3] text-3xl mb-2" />,
-    title: "Skalabilitas",
-    desc: "Siap berkembang seiring bisnis Anda tumbuh.",
-  },
+  // Lakukan perubahan yang sama untuk semua icon
 ];
 
 export default function FeaturesSection() {
